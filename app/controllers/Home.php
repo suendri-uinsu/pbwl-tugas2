@@ -9,8 +9,7 @@ class Home extends Controller
 
 	public function index()
 	{
-		$data['row_index'] = "";
-		$this->home('home/index', $data);
+		$this->home('home/index');
 	}
 
 	public function show()

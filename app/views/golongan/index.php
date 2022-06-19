@@ -1,7 +1,7 @@
-<h2 class="mt-3">
+<h3>
       Daftar Golongan
-      <a href="<?php echo URL; ?>/golongan/create" class="btn btn-primary">Golongan Baru</a>
-</h2>
+      <a href="<?php echo URL; ?>/golongan/create" class="btn btn-primary btn-sm float-end">Golongan Baru</a>
+</h3>
 
 <table class="table table-bordered">
       <thead>
@@ -19,8 +19,8 @@
                         <td><?php echo $row['gol_id']; ?></td>
                         <td><?php echo $row['gol_kode']; ?></td>
                         <td><?php echo $row['gol_nama']; ?></td>
-                        <td></td>
-                        <td></td>
+                        <td><a href="<?php echo URL; ?>/golongan/edit/<?php echo $row['gol_id']; ?>" class="btn btn-warning btn-sm">Edit</a></td>
+                        <td><a href="<?php echo URL; ?>/golongan/delete/<?php echo $row['gol_id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin menghapus data ini?');">Delete</a></td>
                   </tr>
             <?php } ?>
       </tbody>

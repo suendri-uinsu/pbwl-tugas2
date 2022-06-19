@@ -3,11 +3,14 @@
 // Laporan error
 error_reporting(E_ALL);
 
+//timezone
+date_default_timezone_set("Asia/Jakarta");
+
 // Mulai sesi
 session_start();
 
 // Url -
-define("URL", "http://localhost/tugas2-pln");
+define("URL", "http://localhost/pbwl-tugas2");
 define("AST", URL . "/layouts/assets");
 
 // Path root
